@@ -1,0 +1,7 @@
+<h1>Tic Tac Toe</h1>
+<aside class="stats">loading...</aside>
+<ul class="board"></ul>
+<footer>
+  <p class="status"></p>
+  <p><button class="new-game">New Game</button></p>
+</footer>

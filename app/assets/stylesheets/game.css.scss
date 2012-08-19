@@ -1,0 +1,84 @@
+@import 'bourbon';
+
+.game {
+  &.in-progress footer {
+    display: none;
+  }
+  width: 262px;
+  margin: 0 auto;
+  text-align: center;
+
+  footer .status {
+    font-size: 18px;
+    color: #666;
+  }
+
+  aside {
+    float: right;
+    width: 100px;
+    color: #666;
+  }
+
+
+  .board {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    color: #fff;
+
+    .field {
+      width: 50px;
+      height: 50px;
+      float: left;
+      @include box-sizing(border-box);
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-top: none;
+      border-left: none;
+      text-align: center;
+      line-height: 50px;
+      font-size: 0;
+      @include transition(all 0.2s);
+
+
+      &[data-index='2'], &[data-index='5'], &[data-index='8'] {
+        border-right: none;
+      }
+
+      &[data-index='6'], &[data-index='7'], &[data-index='8'] {
+        border-bottom: none;
+      }
+
+      &[class*='player'] {
+        font-size: 22px;
+        text-shadow: 1px 1px 0 #ccc;
+      }
+
+      &.player-x {
+        color: #99cc99;
+      }
+      &.player-o {
+        color: #ff9999;
+      }
+
+      &.win {
+        font-size: 28px;
+        &.player-x {
+          color: green;
+        }
+        &.player-o {
+          color: red;
+        }
+      }
+      &.empty {
+        cursor: pointer;
+      }
+    }
+  }
+
+}
