@@ -1,5 +1,5 @@
 class Tictactoe.Views.Stats extends Backbone.View
-  template: JST['stats/stats']
+  template: HandlebarsTemplates['stats/stats']
 
   initialize: ->
     @stats = new Tictactoe.Models.Stats

@@ -1,6 +1,6 @@
 class Tictactoe.Views.Game extends Backbone.View
   el: '#tictactoe-game'
-  template: JST['games/game']
+  template: HandlebarsTemplates['games/game']
 
   events:
     'click .field': 'setPin'

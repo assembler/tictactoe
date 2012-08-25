@@ -1,3 +1,0 @@
-<p>Wins: <%= @win %></p>
-<p>Loses: <%= @lose %></p>
-<p>Draws: <%= @draw %></p>

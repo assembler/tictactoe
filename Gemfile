@@ -8,18 +8,19 @@ gem 'sqlite3'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-  gem 'bourbon'
 
   gem 'uglifier', '>= 1.0.3'
-end
 
-gem 'jquery-rails'
-gem 'backbone-on-rails'
+  gem 'jquery-rails'
+  gem 'backbone-on-rails'
+  gem 'handlebars_assets'
+  gem 'bourbon'
+end
 
 group :development, :test do
   gem 'jasminerice'
-  gem "rspec-rails", "~> 2.0"
-  gem "valid_attribute"
+  gem 'rspec-rails', '~> 2.0'
+  gem 'valid_attribute'
 end
 
 group :test do
